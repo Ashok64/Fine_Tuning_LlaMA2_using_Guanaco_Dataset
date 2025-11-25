@@ -76,7 +76,9 @@ The goal is to get a lighter, instruction-tuned variant of LLaMA 2 7B that can b
    ```bash
    pip install -U bitsandbytes
    pip install -q --upgrade accelerate peft bitsandbytes transformers trl datasets
-2. Make sure you are logged in to hugging phase
+2. Make sure you are logged in to hugging phase:
+   ```bash
    huggingface-cli login
-3. Run the Script
+4. Run the Script
+   ```bash
    python tuning_llama2_5k.py
